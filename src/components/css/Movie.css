@@ -6,6 +6,9 @@ body{
     background-color: #eff3ff;
     height: 100%;
 }
+.detail-link{
+    text-decoration: none;
+}
 .movie {
     width: 580px;
     background-color: white;
