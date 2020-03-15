@@ -25,7 +25,7 @@ class App extends React.Component {
       <section className="container">
         {isLoading ? (
           <div className="loader">
-            <span className="loader_text">Loading...</span>
+            <h4 className="loader_text">Loading...</h4>
           </div>
         )
           : (
