@@ -40,6 +40,7 @@ class App extends React.Component {
                   poster={item.medium_cover_image}
                   rating={item.rating}
                   runtime={item.runtime}
+                  genres={item.genres}
                 />
               ))}
             </div>
