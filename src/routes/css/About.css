@@ -1,3 +1,43 @@
 body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #eff3f7;
+}
+.about{
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    margin-top: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+.about:hover{
+    animation-name: hovering__nomal;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.creater{
+    font-weight: 400;
+    text-align: right;
+    margin: 0;
+}
+.comment{
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+}
 
+@keyframes hovering__nomal {
+    0% {
+        background-color: white;
+        color: black;
+    }
+    100%{
+        background-color: black;
+        color: white;
+    }
 }

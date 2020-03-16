@@ -26,10 +26,20 @@
     border-radius: 5px;
 }
 .navbar__list__link:hover {
-    position: relative;
-    color: white;
-    background-color: gray;
+    animation-name: hovering__nomal;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
 }
 .navbar__list__link:not(:last-child) {
     margin-bottom: 1px;
+}
+@keyframes hovering__nomal {
+    0% {
+        background-color: white;
+        color: black;
+    }
+    100%{
+        color: white;
+        background-color: gray; 
+    }
 }

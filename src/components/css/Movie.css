@@ -19,10 +19,16 @@ body{
     font-weight: 300;
     padding: 20px;
     border-radius: 5px;
+    border: 3px solid white;
     color: #adaeb9;
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
       0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-  }
+}
+.movie:hover{
+    animation-name: hovering__movie;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
 .movie__poster {
     position: relative;
     top: -50px;
@@ -31,16 +37,13 @@ body{
     margin-right: 30px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
       0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  }
+}
 .movie__data__title{
     margin: 0;
     font-weight: 300;
     margin-bottom: 5px;
     font-size: 24px;
     color: #2c2c2c;
-}
-.movie__data{
-
 }
 .movie__data__year,
 .movie__data__rating,
@@ -66,4 +69,15 @@ body{
 .movie__data__genres li{
     margin-right: 10px;
     font-size: 14px;
+}
+
+@keyframes hovering__movie {
+    0% {
+        border: 3px solid white;
+    }
+    100%{
+        border: 3px solid gray;
+            box-shadow: 0 18px 33px -5px rgba(50, 50, 93, 0.25),
+      0 20px 40px -10px rgba(0, 0, 0, 0.3), 0 -6px 30px -6px rgba(0, 0, 0, 0.025);
+    }
 }
